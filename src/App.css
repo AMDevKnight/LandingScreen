@@ -1,0 +1,89 @@
+.Rectangle {
+  padding: 40px 0px 30px 0px;
+  margin: 40px 0px 30px 0px;
+  background-color: #5454d4;
+}
+.comment {
+  color:#ffffff;
+}
+.authName{
+  font-size:14px;
+  color:#ffffff;
+}
+.number-circle-list {
+  list-style: none;
+}
+.number-circle-list--list-item {
+  counter-increment: circle-counter;
+  margin-bottom: 0.25rem;
+}
+
+.number-circle-list--list-item:before {
+  content: counter(circle-counter);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  color: black;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.number-circle-list--tertiary-color .number-circle-list--list-item:before {
+  background-color: #5454d4;
+  color: white;
+  padding-top: 0.4px;
+}
+
+.gridRow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.copyright {
+  padding: 28px 0;
+  margin-top: 10px;
+ }
+  .copyright span,
+  .copyright a {
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear
+    ; }
+
+  .copyright a:hover {
+    color:#007bff; }
+
+.copyright-menu ul {
+  text-align: right;
+  margin: 0; }
+
+.copyright-menu li {
+  display: inline-block;
+  padding-left: 20px; }
+
+
+  @media screen and (min-width: 768px) {
+    .Rectangle {
+      margin: 82.8px 0 101.7px;
+      padding: 104px 247px 101px 221px;
+    }
+  }
